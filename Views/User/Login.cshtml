@@ -1,0 +1,50 @@
+﻿@model ACiS.Models.User
+@{
+    Layout = "";
+    ViewData["Title"] = "تسجيل الدخول";
+}
+<!DOCTYPE html>
+<html lang="ar-eg">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>تسجيل الدخول - ACiS</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/ACisSite.css" asp-append-version="true" />
+    
+    </head>
+    <body>
+        <div class = "loginForm">
+            <h1>تسجيل الدخول</h1>
+            <div class="row" >
+                <div class = "formContainer">
+                    <form asp-action="Loging" enctype="multipart/form-data">
+                        @if (ViewBag != null)
+                        {
+                            <div class=" alert-danger">@ViewBag.message </div>
+                        }
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label asp-for="Username" class="control-label">اسم المستخدم</label>
+                                <input asp-for="Username" class="form-control" />
+                                <span asp-validation-for="Username" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password" class="control-label">كلمة السر</label>
+                                <input asp-for="Password" type="password" class="form-control" />
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <input type="submit" value="تسجيل الدخول" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    
+</html>

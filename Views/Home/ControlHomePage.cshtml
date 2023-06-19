@@ -1,0 +1,42 @@
+﻿@model ACiS.Models.User
+@{
+    ViewData["Title"] = "الكنترول";
+}
+<head>
+    <link rel="stylesheet" href="~/css/ACisSite.css" />
+</head>
+<div class="text-center">
+    <h2 class="display-4">مرحباً بك فى الكنترول</h2>
+    <br />
+    <br />
+    <div class="mid_Container" id="mid_Container">
+
+
+        <a asp-controller="Home" asp-action="" id="linkStyle">
+            <div class="btn-outline-dark" id="button_option">
+              تجهيزالبيانات
+            </div>
+        </a>
+        <a asp-controller="Home" asp-action="" id="linkStyle">
+            <div class="btn-outline-dark" id="button_option">
+                ادخال ارقام الجلوس
+            </div>
+        </a>
+        <a asp-controller="Home" asp-action="" id="linkStyle">
+            <div class="btn-outline-dark" id="button_option">
+                ترصيد الدرجات
+            </div>
+        </a>
+        <a asp-controller="Home" asp-action="" id="linkStyle">
+            <div class="btn-outline-dark" id="button_option">
+                الجبر والرفع التلقائى
+            </div>
+        </a>
+        <a asp-controller="Home" asp-action="" id="linkStyle">
+            <div class="btn-outline-dark" id="button_option">
+                طباعة التقارير
+            </div>
+        </a>
+
+    </div>
+</div>

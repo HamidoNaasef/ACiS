@@ -1,0 +1,42 @@
+﻿body {
+    margin:0 auto;
+}
+.loginForm {
+    margin: 10vh 35vw;
+    text-align: right;
+}
+.formContainer {
+    width: 450px;
+}
+.formContainer input{
+    text-align: right;
+}
+#HomeMenus {
+    width: 5vw;
+    height: 5vh;
+}
+#mid_Container {
+    text-align: center;
+}
+#linkStyle {
+    text-decoration: none;
+    width: 10vw;
+    height: 6vh;
+    display: inline;
+    margin: 5px;
+}
+#button_option {
+    font-size: 40px;
+    border: 1px solid #3C3C3C;
+    font-family: Arial;
+    width: 25vw;
+    height: 30vh;
+    line-height:260px;
+    display: inline-block;
+    border-radius: 8px;
+    margin: 5px;
+}
+#backgroundImg{
+    position: absolute;
+    opacity: 0.4;
+}

@@ -1,0 +1,38 @@
+﻿@model ACiS.Models.User
+@{
+    ViewData["Title"] = "الصفحة الرئيسية";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/ACisSite.css" />
+</head>
+<div class="text-center">
+    <h2 class="display-4">مرحباً بك</h2>
+     <br />
+     <br />
+         <div class = "mid_Container" id="mid_Container">
+            
+
+            <a asp-controller="Home" asp-action="ControlHomePage" id = "linkStyle">
+                <div class = "btn-outline-dark" id = "button_option">
+                    الكنترول    
+                </div>
+            </a>
+            <a asp-controller="Home" asp-action="StudentAffairsHomePage" id = "linkStyle">
+                <div class = "btn-outline-dark" id = "button_option">
+                    شئون الطلبة    
+                </div>
+            </a>
+            <a asp-controller="Home" asp-action="GraduatesAffairsHomePage" id = "linkStyle">
+                <div class = "btn-outline-dark" id = "button_option">
+                    شئون الخريجين    
+                </div>
+            </a>
+            <a asp-controller="Home" asp-action="GraduatesAffairsHomePage" id = "linkStyle">
+                <div class = "btn-outline-dark" id = "button_option">
+                    الانشاءات   
+                </div>
+            </a>
+
+        </div>
+</div>
